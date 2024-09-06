@@ -67,24 +67,24 @@ ax2.set_title("Desviaciones en las Ventas Diarias")
 st.pyplot(fig2)
 
 # Sección 3: Comparación de Ventas en Días Festivos vs No Festivos
-st.subheader("Distribución de Ventas: Días Festivos vs No Festivos")
+#st.subheader("Distribución de Ventas: Días Festivos vs No Festivos")
 
 # Suponemos que el CSV incluye una columna 'EsFestivo' que indica si el día es festivo (1) o no (0)
-total_holiday_sales = ventas_df[ventas_df['day_of_week'].isin(['Sun', 'Sat'])]['total'].sum()
-non_holiday_sales = ventas_df[~ventas_df['day_of_week'].isin(['Sun', 'Sat'])]['total'].sum()
+#total_holiday_sales = ventas_df[ventas_df['day_of_week'].isin(['Sun', 'Sat'])]['total'].sum()
+#non_holiday_sales = ventas_df[~ventas_df['day_of_week'].isin(['Sun', 'Sat'])]['total'].sum()
 
-labels = ['Ventas en Días Festivos', 'Ventas en Días No Festivos']
-sales_data = [total_holiday_sales, non_holiday_sales]
+#labels = ['Ventas en Días Festivos', 'Ventas en Días No Festivos']
+#sales_data = [total_holiday_sales, non_holiday_sales]
 
-fig3 = go.Figure(data=[go.Pie(labels=labels, values=sales_data, hole=.3)])
-fig3.update_layout(title="Ventas en Días Festivos vs Días No Festivos")
-st.plotly_chart(fig3)
+#fig3 = go.Figure(data=[go.Pie(labels=labels, values=sales_data, hole=.3)])
+#fig3.update_layout(title="Ventas en Días Festivos vs Días No Festivos")
+#st.plotly_chart(fig3)
 
 # Sección 4: Mapa de Calor de Correlaciones entre Productos
 st.subheader("Mapa de Calor de Correlaciones entre Productos")
 
 # Crear un DataFrame con las correlaciones simuladas de los productos
-correlaciones_df = ventas_df[['angbutter', 'plain_bread', 'croissant', 'espresso', 'tiramisu']].corr()
+correlaciones_df = ventas_df[['day of week', 'total', 'place', 'espresso', 'tiramisu']].corr()
 
 fig4, ax4 = plt.subplots()
 sns.heatmap(correlaciones_df, annot=True, cmap='coolwarm', ax=ax4)
