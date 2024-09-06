@@ -11,7 +11,7 @@ st.title("Dashboard de Rendimiento de Ventas")
 # Leer los datos desde los archivos CSV en la carpeta "data"
 # Asegúrate de que los archivos están en la carpeta "data"
 ventas_file = 'data/ventas.csv'
-correlaciones_file = 'data/correlaciones.csv'
+precios_file = 'data/correlaciones.csv'
 
 # Cargar los datos
 try:
