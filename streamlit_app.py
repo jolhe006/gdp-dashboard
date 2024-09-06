@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
-import plotly.graph_objs as go
 
 # Título del Dashboard
 st.title("Dashboard de Rendimiento de Ventas del Supermercado Alan")
