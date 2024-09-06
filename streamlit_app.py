@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import math
 from pathlib import Path
-import matplotlib.pyplot as plt
 
 # Título de la app
 st.title("Análisis de Ventas del Supermercado Alan")
