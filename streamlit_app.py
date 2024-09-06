@@ -21,7 +21,9 @@ try:
     # Corregir los nombres de las columnas
     ventas_df.columns = ['datetime', 'day_of_week', 'total', 'place', 'angbutter', 'plain_bread', 
                          'jam', 'americano', 'croissant', 'caffe_latte', 'espresso', 
-                         'tiramisu_croissant', 'gateau_chocolat', 'pandoro', 'cheese_cake',
+                         'tiramisu_croissant', 'cacao deep', 'pain au chocolat', 
+                         'almond croissant', 'croque monsieur', 'mad garlic', 
+                         'gateau_chocolat', 'pandoro', 'cheese_cake',
                          'lemon_ade', 'orange_pound', 'wiener', 'vanilla_latte', 
                          'berry_ade', 'tiramisu', 'meringue_cookies']
     
