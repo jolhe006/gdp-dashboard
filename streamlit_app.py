@@ -84,7 +84,7 @@ st.pyplot(fig2)
 st.subheader("Mapa de Calor de Correlaciones entre Productos")
 
 # Crear un DataFrame con las correlaciones simuladas de los productos
-correlaciones_df = ventas_df[['day of week', 'total', 'place', 'espresso', 'tiramisu']].corr()
+correlaciones_df = ventas_df[['day_of_week', 'total', 'place']].corr()
 
 fig4, ax4 = plt.subplots()
 sns.heatmap(correlaciones_df, annot=True, cmap='coolwarm', ax=ax4)
